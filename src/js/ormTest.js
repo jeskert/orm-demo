@@ -1,5 +1,6 @@
 const orm = require('orm');
 const express = require('express');
+const scrapy = require('./douban-movie-scrapy')
 let app = express();
 
 app.use(orm.express("mysql://root:@localhost:3306/test", {
@@ -23,6 +24,10 @@ app.get('/', function (req, res, next) {
 
         res.send(JSON.stringify(users));
     })
+});
+
+app.get('/scrapy', function (req, res, next) {
+    scrapy();
 });
 
 var server = app.listen(8081, function () {
