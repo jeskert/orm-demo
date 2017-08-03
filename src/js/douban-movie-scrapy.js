@@ -81,7 +81,6 @@ function saveDataByTag(req, tag, genres) {
     saveSelectedData(moviesFromDouban, genres, req);
 }
 
-
 module.exports = {
     saveTop250Data,
     saveDataByTag

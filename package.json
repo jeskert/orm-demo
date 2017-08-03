@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
     "express": "^4.15.3",
     "mysql": "^2.14.0",
     "orm": "^3.2.4",
